@@ -5,6 +5,8 @@ html {
 body {
     height: 100%;
     min-height: 100%;
+    font-family: 'Open Sans', sans-serif !Important;
+
 }
 
 a.anchor {
@@ -212,5 +214,36 @@ a {
 
 .para-button {
   margin-top: 25px;
+  border-radius:50px !Important;
+  padding-left: 30px !Important;
+  padding-right: 30px !Important;
+  background-color: #346BB4 !Important;
+  font-weight:500 !Important;
+}
+
+.para-white {
+  padding-top: 10px;
+  width: 90%;
+}
+
+.section-header-1 {
+  font-weight: 200;
+  font-size: 20px;
+  color: #76B2DE;
+
+}
+
+.section-header-2 {
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #346BB4
+  
+}
+
+#micro {
+  width: 85%;
+  margin: auto;
+  text-align: center;
 }
 
