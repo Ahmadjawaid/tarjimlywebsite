@@ -94,7 +94,7 @@ footer a{
     background-color: #396cbf;
     position: relative;
 }
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 576px) {
     .three-panel .middle {
         height: 180px !important;
         top: -25px;
