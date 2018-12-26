@@ -29,6 +29,7 @@ a.anchor {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 .landing-text {
     text-align: center;
@@ -42,7 +43,8 @@ a.anchor {
 
 .landing-text .buttons {
     display: inline-block;
-    max-width: 412px;
+    width: 80%;
+    max-width: 400px;
 }
 
 .landing-text h1 {
