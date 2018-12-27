@@ -6,17 +6,10 @@ body {
     height: 100%;
     min-height: 100%;
     font-family: 'Open Sans', sans-serif !Important;
+    background-color: white !important;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -46px;
-    visibility: hidden;
-}
-
-
-/*BANNER IMAGE*/
+/*Landing*/
 .home {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/SyrianRefugeeWomenGreece1400px.jpg);
@@ -29,7 +22,7 @@ a.anchor {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 .landing-text {
     text-align: center;
@@ -61,64 +54,99 @@ a.anchor {
     .landing-text h1 {
       font-size: 50px;
       padding-top: 18px;
-    
     }
-    
     .landing-text h3 {
       padding-top: 18px;
     }
 }
 
-
+/*Footer*/
 footer {
     color: white;
     width: 100%;
     margin-top: 20px;
-    padding: 35px 30px 25px 30px;
+    padding: 35px 30px 20px 30px;
 }
 
-footer a{
-    color: white;
+.no-bullet {
+  padding: 0;
+  list-style: none;
 }
 
+/*Buttons and hover properties*/
+.main-button {
+  margin-top: 25px;
+  color:rgba(255, 255, 255, 0.9);
+  border-radius:50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #346BB4;
+  font-weight:500;
+}
+
+.main-button:hover {
+  color: white;
+}
+
+#join-us-btn {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.outline-button {
+  margin-top: 50px;
+  color: white;
+  border: 2px solid white;
+  border-radius:50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight:500;
+
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.outline-button:hover {
+  background: white;
+  border: 2px solid white;
+  color: black;
+  font-weight:500;
+}
+
+
+/*Three panel sections*/
 .three-panel{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .three-panel .struct {
-
-    background-color: #76b7db;
-    height: 130px;
-    width: 100%;
-    
+  background-color: #76b7db;
+  height: 130px;
+  width: 100%;
 }
 .three-panel .struct h2 {
-    margin: 0;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 22px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .three-panel .struct2 {
-    margin: 0;
-    
-    width: 100%;
-
+  margin: 0;
+  width: 100%;
 }
 
 .three-panel .struct2 .col-sm {
-    height: 130px;
-    background-color: #396cbf;
+  height: 130px;
+  background-color: #396cbf;
 }
 .three-panel .middle {
-    background-color: #396cbf;
-    position: relative;
+  background-color: #396cbf;
+  position: relative;
 }
 @media only screen and (min-width: 576px) {
     .three-panel .middle {
@@ -137,28 +165,111 @@ footer a{
     }
 }
 .three-panel .struct2 h2 {
-    margin: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*White section headings*/
+.section-header-1 {
+  margin-top: -10px;
+  font-weight: 200;
+  font-size: 24px;
+  color: #76B2DE;
+  padding-bottom: 0;
+}
+.section-header-2 {
+  margin-top: -5px;
+  font-weight: 600;
+  font-size: 27px;
+  color: #346BB4;
+  padding-top: 0;
+  
+}
+.section-header-3 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 100px;
+  opacity: 0.05;
+  color: black;
+  top: 2px;
+}
+
+/*Image Editing*/
+#micro {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.img-round {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+/*Font Awsome Icon Editing*/
+.fa-phone {
+  color: #346BB4;
+  padding-right: 5px;
+}
+
+.fa-envelope {
+  color: #346BB4;
+  width: 20px;
+  padding-right: 5px;
+}
+
+.fa-map-marker {
+  color: #346BB4;
+  width: 20px;
+  padding-right: 5px;
+}
+
+#fa-twitter-2 {
+  background-color: transparent;
+  color: #08a0e9;
+  padding: 5px 10px 0 0;
+}
+
+.fa-facebook {
+  background-color: #3C599F;
+}
+
+.fa-twitter {
+  background-color: #08a0e9;
+}
+
+.fa-instagram {
+  background-color: #e95950;
+}
+
+.fa-linkedin {
+  background-color: #0077B5;
+}
+
+.social-icons .fa {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.green-button {
-    background-color: #31e0a9 !important;
-    margin-top: 25px;
-    border-radius:50px !Important;
-    padding-left: 30px !Important;
-    padding-right: 30px !Important;
-    font-weight:500 !Important;
+.social-icons .fa:hover {
+    color: white;
 }
-.green {
-    background-color: #31e0a9 !important;
-}
-
 
 
 /* Header Nav Bar*/
@@ -274,71 +385,18 @@ footer a{
 .scrolled .header-donate-button {
   color: white;
 }
+
+/*Others*/
+.green {
+    background-color: #31e0a9 !important;
+}
+
+.blue {
+    background-color: #346BB4 !important;
+}
+
 a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-#mission {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-#image-mission {
-  height: auto;
-  width: 75%;
-  align-content: center;
-}
-
-.para-button {
-  margin-top: 25px;
   color: white;
-  border-radius:50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #346BB4;
-  font-weight:500;
 }
 
-.para-white {
-  padding-top: 10px;
-  width: 90%;
-}
-
-.outline-button {
-  margin-top: 25px;
-  color: white;
-  border: 2px solid white;
-  border-radius:50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-weight:500;
-
-  background: transparent;
-  transition: all 0.3s ease 0s;
-}
-
-.outline-button:hover {
-  background: #346BB4;
-  border: 2px solid #346BB4;
-}
-.section-header-1 {
-  font-weight: 200;
-  font-size: 20px;
-  color: #76B2DE;
-
-}
-
-.section-header-2 {
-  margin-top: 0px;
-  font-weight: 600;
-  font-size: 22px;
-  color: #346BB4
-  
-}
-
-#micro {
-  width: 85%;
-  margin: auto;
-  text-align: center;
-}
 
