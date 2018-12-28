@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-/*    background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 .landing-text {
     text-align: center;
@@ -301,39 +301,36 @@ footer {
   height: 70px;
   padding: 0 32px;
   pointer-events: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 #left-header {
   display: flex;
-  flex: 1 1 50%;
+  flex: 0 1 15%;
   justify-content: flex-start;
   align-items: center;
 }
 #center-header {
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
+  justify-content: space-between;
 }
 #right-header {
   display: flex;
-  flex: 1 1 50%;
+  flex: 0 1 15%;
   justify-content: flex-end;
   align-items: center;
 }
 #nav-logo {
+  position: relative;
   display: inherit;
   align-items: center;
-  content: url(../images/tarjimlyLogos/SmileLogoWideWordmark.png);
+  content: url(Images/logo-bgTarjimly.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 40px;
-}
-.scrolled #nav-logo {
-    content: url(../images/tarjimlyLogos/SmileLogoWhiteWideWordmark.png);
-}
-
-#tarjimly-title {
-  font-size: 22px;
-  margin-left: 8px;
-  font-family: 'Comfortaa', sans-serif;
+  height: 94px;
+  top:12px;
 }
 
 .nav-button {
@@ -341,50 +338,47 @@ footer {
   text-transform: uppercase;
   font-weight: 400;
   padding: 1em;
+  white-space: nowrap
 }
-.header.scrolled #lang-select-button {
-  color: white;
-  border: solid 1px white;
+.nav-button:hover {
+    color: #76b7db !important;
+    text-decoration: none; 
 }
-#lang-select-button {
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 8px;
+  margin-top: 8px;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  white-space: nowrap;
+  min-width: 180px;
+  float: none;
   color: black;
-  border: solid 1px black;
-  width: 110px;
-  background: none;
-  border-radius: 8px;
-  padding: 5px 9px;
-  font-size: 14px;
-}
-#lang-select-button .ui-icon {
-  background: url("../images/landing/DropdownArrowWhite.png");
-  background-size: 100%;
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-.header.scrolled #lang-select-button .ui-icon {
-  -webkit-filter: invert(0);
-  filter: invert(0);
-}
-#lang-select-menu {
-  border: solid 1px white;
-  text-transform: uppercase;
-  width: 60px;
-  font-size: 14px;
-  border-radius: 2px;
-  height: 300px;
-  overflow-y: scroll;
-}
-#lang-select-menu .ui-menu-item {
-  padding: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.header-donate-button {
-  color: green;
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.scrolled .header-donate-button {
-  color: white;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+
 
 /*Others*/
 .green {

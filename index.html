@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/favicon1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
@@ -17,25 +16,34 @@
       <header class="header scrolled transparent">
         <div class="inner-header">
           <nav id="left-header">
-            <a href="#get-started" class="nav-button nav-primary">Get Started</a>
-            <a href="#results" class="nav-button nav-primary">Results</a>
-            <a href="#supporters" class="nav-button nav-secondary">Supporters</a>
+              
           </nav>
           <nav id="center-header">
-            <div href="#tarjimly-start" id="nav-logo">
-              TEAS
-            </div>
+            <div href="#tarjimly-start" id="nav-logo"></div>
+            <div class="dropdown">
+              <a class="nav-button nav-secondary">ABOUT <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#">HOW IT WORKS</a>
+                <a href="#">FAQ</a>
+                <a href="#">TEAM</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+              <a class="nav-button nav-secondary">Programs <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#">Corporate Volunteers</a>
+                <a href="#">Certified Translators</a>
+                <a href="#">Refugee Translators</a>
+              </div>
+            </div> 
+            <a href="" class="nav-button nav-secondary">Results</a>
+            <a href="" class="nav-button nav-secondary">Stories</a>
+            <a href="" class="nav-button nav-secondary">Donate</a>
+            
+            <button class="btn center-block blue main-button" style="margin:0;">Join Us</button>
           </nav>
           <nav id="right-header">
-            <a href="#team" class="nav-button nav-secondary">Team</a>
-            <a href="/faq/en" class="nav-button nav-secondary">FAQ</a>
-            <a target="_blank" href="https://medium.com/@tarjimly" class="nav-button nav-secondary">Blog</a>
-            <a href="/donate" class="nav-button header-donate-button">Donate</a>
-            <div class="language-box nav-button">
-              <div id="select-box">
-                <span tabindex="0" id="lang-select-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="lang-select-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget" aria-activedescendant="ui-id-1" aria-labelledby="ui-id-1" aria-disabled="false"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">English</span></span>
-              </div>
-            </div>
+            
           </nav>
         </div>
       </header>
@@ -369,7 +377,44 @@
 
     </div>
   </footer>
-    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        var faded = true;
+        var ontop = true;
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 60) {
+                faded = false;
+                ontop = false;
+                $('.header').removeClass('transparent');
+            } else {
+                faded = true;
+                ontop = true;
+                $('.header').addClass('transparent');
+            }
+        });
+        
+        $("#cbutton").click(() => {
+            if(ontop && faded){
+                faded = false;
+                $('.navbar').addClass('shadowed');
+                $('.navbar').addClass('bg-dark');
+                $('.navbar').removeClass('transparent');
+            } else if (ontop && !faded) {
+                faded = true;
+                $('.navbar').removeClass('shadowed');
+                $('.navbar').removeClass('bg-dark');
+                $('.navbar').addClass('transparent');
+            }
+        })
+        $(".nav-link").click(() => {
+            if ($("#cbutton").is(":visible")){
+                $("#cbutton").trigger("click");
+            }
+        })
+    </script>
 
   </body>
 </html>
