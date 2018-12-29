@@ -343,8 +343,8 @@ footer {
   content: url(Images/logo-bgTarjimly.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 94px;
-  top:12px;
+  height: 92px;
+  top:11px;
 }
 #mobile-logo {
     position: absolute;
