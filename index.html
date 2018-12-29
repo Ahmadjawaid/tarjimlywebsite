@@ -13,6 +13,7 @@
   <body>
     
 <!--  Navbar-->
+<!--NAVBAR FOR DESKTOP-->
       <header class="header scrolled transparent">
         <div class="inner-header">
           <nav id="left-header">
@@ -47,6 +48,59 @@
           </nav>
         </div>
       </header>
+<!--NAVBAR FOR MOBILE      -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark transparent">
+        <a class="navbar-brand" href="#">
+          <img id = "mobile-logo" src="Images/logo-bgTarjimly.png" height="94" alt="">
+        </a>
+        
+        <button class="navbar-toggler" id="cbutton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link"></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link"></a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">How It Works</a>
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">Team</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Programs
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Corporate Volunteers</a>
+                <a class="dropdown-item" href="#">Certified Translators</a>
+                <a class="dropdown-item" href="#">Refugee Translators</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn center-block blue main-button" style="margin:5px; margin-left: 0px;">Join Us</button>-->
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 <!--    Main Landing -->
   <div class="home">
@@ -384,36 +438,37 @@
     <script>
         var faded = true;
         var ontop = true;
+        var open = false;
         $(window).scroll(function() {
             if($(this).scrollTop() > 60) {
                 faded = false;
                 ontop = false;
                 $('.header').removeClass('transparent');
-            } else {
+                $('.navbar').removeClass('transparent');
+            } else if(!open) {
                 faded = true;
                 ontop = true;
                 $('.header').addClass('transparent');
+                $('.navbar').addClass('transparent');
+            } else {
+                faded = false;
+                ontop = true;
+                $('.header').removeClass('transparent');
+                $('.navbar').removeClass('transparent');
             }
         });
         
         $("#cbutton").click(() => {
+            open = !open;
             if(ontop && faded){
                 faded = false;
-                $('.navbar').addClass('shadowed');
-                $('.navbar').addClass('bg-dark');
                 $('.navbar').removeClass('transparent');
             } else if (ontop && !faded) {
                 faded = true;
-                $('.navbar').removeClass('shadowed');
-                $('.navbar').removeClass('bg-dark');
                 $('.navbar').addClass('transparent');
             }
         })
-        $(".nav-link").click(() => {
-            if ($("#cbutton").is(":visible")){
-                $("#cbutton").trigger("click");
-            }
-        })
+
     </script>
 
   </body>
