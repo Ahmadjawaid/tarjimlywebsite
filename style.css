@@ -94,17 +94,16 @@ footer {
 }
 
 #join-us-btn {
-  margin-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
 }
 .outline-button {
-  margin-top: 50px;
+  margin-top: 25px;
   color: white;
   border: 2px solid white;
   border-radius:50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight:500;
 
   background: transparent;
@@ -169,7 +168,7 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: 600;
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 
@@ -181,8 +180,8 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 200;
-  font-size: 24px;
-  width: 75%;
+  font-size: 22px;
+  width: 65%;
 }
 
 /*White section headings*/
@@ -284,7 +283,7 @@ footer {
 
 /* Header Nav Bar*/
 .header {
-  position: fixed;
+  position: absolute;
   text-align: center;
   left:0;
   top:0;
