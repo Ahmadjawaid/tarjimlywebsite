@@ -149,13 +149,18 @@ footer {
   height: 150px;
   background-color: #396cbf;
 }
+
+.three-panel .struct2 .col-md {
+  height: 150px;
+  background-color: #396cbf;
+}
 .three-panel .middle {
   background-color: #396cbf;
   position: relative;
 }
 
 /* Change min-width to 770*/
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
     .three-panel .middle {
         height: 220px !important;
         top: -35px;
