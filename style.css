@@ -290,7 +290,7 @@ footer {
 
 
 .header {
-  position: absolute;
+  position: fixed;
   text-align: center;
   left:0;
   top:0;
