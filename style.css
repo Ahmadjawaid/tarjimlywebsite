@@ -51,6 +51,7 @@ body {
 .landing-text h3 {
   padding-top: 20px;
 }
+
 @media only screen and (max-width: 576px) {
     .landing-text h1 {
       font-size: 50px;
@@ -58,6 +59,15 @@ body {
     }
     .landing-text h3 {
       padding-top: 18px;
+    }
+    .home {
+        background-attachment: relative;
+    }
+    .main-button #one {
+        display: none;
+    }
+    .main-button #two {
+        display: inline !important;
     }
 }
 
@@ -84,8 +94,6 @@ footer {
   margin-top: 25px;
   color:rgba(255, 255, 255, 0.9);
   border-radius:50px;
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: #346BB4;
   font-weight:500;
 }
