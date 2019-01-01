@@ -24,16 +24,16 @@
             <div class="dropdown">
               <a class="nav-button nav-secondary">ABOUT <i class="fa fa-caret-down"></i></a>
               <div class="dropdown-content">
-                <a href="#">HOW IT WORKS</a>
-                <a href="#">FAQ</a>
+                <a class="bottom-border" href="#">HOW IT WORKS</a>
+                <a class="bottom-border" href="#">FAQ</a>
                 <a href="#">TEAM</a>
               </div>
             </div> 
             <div class="dropdown">
               <a class="nav-button nav-secondary">Programs <i class="fa fa-caret-down"></i></a>
               <div class="dropdown-content">
-                <a href="#">Corporate Volunteers</a>
-                <a href="#">Certified Translators</a>
+                <a class="bottom-border" href="#">Corporate Volunteers</a>
+                <a class="bottom-border" href="#">Certified Translators</a>
                 <a href="#">Refugee Translators</a>
               </div>
             </div> 
@@ -114,10 +114,10 @@
         <div class="buttons">
           <div class="row">
             <div class="col-6">
-              <button class="btn blue main-button">Join Us</button>
+              <button style= "width: 119px; border: 2px solid #346BB4" class="btn blue main-button">Join Us</button>
             </div>
             <div class="col-6">
-              <button class="btn outline-button">Donate</button>
+              <button style= "width: 119px;" class="btn outline-button">Donate</button>
             </div>
           </div>
            
@@ -168,7 +168,8 @@
           </div>
       <div class = "col-md middle">
             <h2 style="font-weight: 400; font-size: 26px; width: 80%;">
-                Humanitarian services should not be denied due to language barriers
+                Humanitarian services should never be denied due to language barriers
+<!--                <br><img style="width: 10% !important;" src="Images/LanguagesIcon2.png">-->
             </h2>
         </div>
         <div class = "col-md">
@@ -189,11 +190,11 @@
             <div style='padding: 5px;'>
               <img id="m" class="img-fluid img-round" src="Images/UNHCRInnovationService.jpg" alt="">
             </div>
-              <div style='padding: 20px 5px 5px 5px;' class="row">
-                <div class="col-sm-6">
+              <div class="row" style='padding: 0px 5px 5px 5px;' >
+                <div style='padding-top: 20px;' class="col-sm-6">
                   <img class="img-fluid img-round" src="Images/KRM_Tarjimly.jpg" alt="">
                 </div>
-                <div class="col-sm-6">
+                <div style='padding-top: 20px;' class="col-sm-6">
                   <img class="img-fluid img-round" src="Images/KRM_Tarjimly.jpg" alt="">
                 </div>                     
               </div> 
@@ -207,6 +208,9 @@
               <h2 class="section-header-2">Technology + Community</h2>
               <p class="lead">The Tarjimly mobile app allows the world’s 3 billion bilinguals to remotely volunteer their language skills as translators and interpreters for the 65 million displaced people.  Today, it is the most accessible translator service in the world.</p>
               <p class="lead">  When a refugee, asylum seeker, or humanitarian worker requests a translator for a particular language, Tarjimly’s machine learning matching algorithm selects the best volunteers in our community of 8,000+ to notify.  Tarjimly then connects the best person available in a live chat with the person in need, where they can send text, documents, or even get on a phone or video call.  </p>
+              <div style="text-align: center;">
+                 <button style="margin-top: 0px;" class="btn blue main-button">How It Works</button>
+              </div>
             </div>
           </div>
         </div>
@@ -217,7 +221,7 @@
     <section>
      <div class = "three-panel">
        <div style="height: 200px !important;" class = "struct">
-         <h2>Tarjimly needs to mobilize <c style='color: #396cbf'>1 million</c> multi-linguals. <br> Here's how you can help:</h2>
+          <h2 style="line-height: 45px;">Tarjimly needs to mobilize <c style='color: #396cbf'>1 million</c> multi-linguals. <br> Here's how you can help:</h2>
        </div>
        <div class = "row struct2">
              <div class = "col-md"  style="height: 220px !important;">
@@ -243,10 +247,10 @@
                </div>
                  <ul class="social-icons icon-circle list-unstyled">
                 <li style="margin-top: 25px; word-spacing: 10px; font-size: 14px;">
-                  <a href="#"><i class="green fa fa-facebook fa-lg"></i></a>
-                  <a href="#"><i class="green fa fa-twitter fa-lg"></i></a> 
-                  <a href="#"><i class="green fa fa-instagram fa-lg"></i></a>
-                  <a href="#"><i class="green fa fa-linkedin fa-lg"></i></a> </li>
+                  <a href="#"><i class=" fa fa-facebook fa-lg"></i></a>
+                  <a href="#"><i class=" fa fa-twitter fa-lg"></i></a> 
+                  <a href="#"><i class=" fa fa-instagram fa-lg"></i></a>
+                  <a href="#"><i class=" fa fa-linkedin fa-lg"></i></a> </li>
               </ul>
                </h2>
                
@@ -262,7 +266,9 @@
           <div class="col-lg-6 order-lg-2">
             <div class="p-3">
               <img class="img-fluid rounded center-block" src="Images/Microvolunteers.png" alt="">
-              <button class="btn center-block blue main-button">See Case Studies</button>
+              <div style="text-align: center">
+                 <button class="btn blue main-button">See Case Studies</button>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
@@ -314,7 +320,12 @@
             <h2 class="section-header-2">Silicon Valley + Social Good</h2>
             <p class="lead">Our work is supported by multiple generous donors and partners in the technology and humanitarian sectors.</p>
             <p class="lead"> Tarjimly is bridging these divided communities with technology, talent, and financial support.  Learn how you can get your company involved: </p>
-            <button class="btn center-block blue main-button">Learn About Tarjimly Corporate Volunteering</button>
+            <div style="text-align: center">
+                <button class="btn btn-primary blue main-button">
+                    <span id = "one">Learn About Tarjimly Corporate Volunteering</span>
+                    <span id = "two" style="display:none">Learn More</span>
+                </button>
+            </div>
           </div>
         </div>
       </div>
@@ -328,7 +339,9 @@
           <div class="col-lg-6 order-lg-2">
             <div class="p-4">
               <img class="img-fluid rounded" src="Images/TarjimlyTeam.png" alt="">
-              <button class="btn blue main-button">Meet Our Board & Team</button>
+              <div style="text-align: center">
+                <button class="btn blue main-button">Meet Our Board & Team</button>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
@@ -336,7 +349,7 @@
               <h1 style='margin-left: -45px;' class="section-header-3">Team</h1>
               <h4 class="section-header-1">&#8212 Team</h4>
               <h2 class="section-header-2">Made By Refugees & Immigrants</h2>
-              <p class="lead">Our team is comprised of 3 full-time staff and 25+ volunteers in 3 different countries.  Our founders are MIT graduates, YC alum, and Forbes 30 Under 30 awardees.  Our team and board and comprised of former refugees and immigrants so that our vision and process centers around the voices and needs of vulnerable people and refugees. </p>
+              <p class="lead">Our team is comprised of 4 full-time staff and 25+ volunteers in 3 different countries.  Our founders are MIT graduates, YC alum, and Forbes 30 Under 30 awardees.  Our team and board and comprised of former refugees and immigrants so that our vision and process centers around the voices and needs of vulnerable people and refugees. </p>
             </div>
           </div>
         </div>
@@ -349,7 +362,6 @@
 <!--   Footer -->
   <footer>
     <div class = "container">
-<!--        <img style="position: absolute;" src="Images/footer_map.png">-->
         <div class="row" style="border-bottom:1px solid #6f6f70; padding-bottom: 5px;">
           
         <!--Contact Information-->
@@ -369,8 +381,8 @@
           <div class="col-md-6 col-lg-3">
             <h6>About Us</h6>
               <ul class="no-bullet">
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Causes</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="#">Volunteer</a></li>
                 <li><a href="#">Donate</a></li>
                 <li><a href="#">Contact Us</a></li>
