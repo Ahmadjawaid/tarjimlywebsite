@@ -149,6 +149,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95%;
+  font-weight: 600;
 }
 
 .three-panel .struct2 {
@@ -223,6 +224,17 @@ footer {
   opacity: 0.05;
   color: black;
   top: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .section-header-3 {
+      position: absolute;
+      font-weight: 800;
+      font-size: 75px;
+      opacity: 0.05;
+      color: black;
+      top: 15px;
+    }
 }
 
 /*Image Editing*/
