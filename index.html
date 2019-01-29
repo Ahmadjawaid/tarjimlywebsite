@@ -13,17 +13,108 @@
   </head>
   <body>
     
-<!--Navigation bar-->
-  <div id="nav-placeholder">
-
-  </div>
-
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("nav3.html");
-  });
-  </script>
-<!--end of Navigation bar-->
+<!--  Navbar-->
+    <!--NAVBAR FOR DESKTOP-->
+      <header class="header scrolled transparent">
+        <div class="inner-header">
+          <nav id="left-header">
+              
+          </nav>
+          <nav id="center-header">
+            <div href="#tarjimly-start" id="nav-logo"></div>
+            <div class="dropdown">
+              <a class="nav-button nav-secondary">ABOUT <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a class="bottom-border" href="howitworks3.html">HOW IT WORKS</a>
+                <a class="bottom-border" href="#">FAQ</a>
+                <a href="#">TEAM</a>
+              </div>
+            </div> 
+            <div class="dropdown">
+              <a class="nav-button nav-secondary">Programs <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a class="bottom-border" href="#">Corporate Volunteers</a>
+                <a class="bottom-border" href="#">Certified Translators</a>
+                <a href="#">Refugee Translators</a>
+              </div>
+            </div> 
+            <a href="" class="nav-button nav-secondary">Results</a>
+            <a href="" class="nav-button nav-secondary">Stories</a>
+            <a href="/donate" class="nav-button nav-secondary">Donate</a>
+            
+            <div style="padding-right: 90px;" class="dropdown">
+              <a id="lang-button" class="nav-button nav-secondary">English <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                <a class="bottom-border" href="#">Corporate Volunteers</a>
+                <a class="bottom-border" href="#">Certified Translators</a>
+                <a href="#">Refugee Translators</a>
+              </div>
+            </div> 
+          </nav>
+          <nav id="right-header">
+            
+          </nav>
+        </div>
+      </header>
+    
+    <!--NAVBAR FOR MOBILE      -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark transparent">
+        
+        <button class="navbar-toggler" id="cbutton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link"></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link"></a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">How It Works</a>
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">Team</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Programs
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Corporate Volunteers</a>
+                <a class="dropdown-item" href="#">Certified Translators</a>
+                <a class="dropdown-item" href="#">Refugee Translators</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Corporate Volunteers</a>
+                <a class="dropdown-item" href="#">Certified Translators</a>
+                <a class="dropdown-item" href="#">Refugee Translators</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
     
 <!--    Main Landing -->
   <div class="home">
@@ -31,7 +122,7 @@
       <div class="landing-text">
           <h1>Translating for Humanity</h1>
           <h3>Millions of refugees & people in need of humanitarian assistance <span style='font-weight: 600'>struggle with language</span>.</h3>
-          <h3>Help give them on-demand language access.</h3>
+          <h3>Help give them on-demand language access. Test</h3>
          
       <!--Buttons-->
         <div class="buttons">

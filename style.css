@@ -1,44 +1,52 @@
 /*t*/
 html {
-    height: 100%;
-    --main-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.14);
+  height: 100%;
+  --main-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.14);
 }
 body {
-    height: 100%;
-    min-height: 100%;
-    font-family: 'Open Sans', sans-serif !Important;
-    background-color: white !important;
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif !Important;
+  background-color: white !important;
 }
 
 /*Landing*/
 .home {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/SyrianRefugeeWomenGreece1400px.jpg);
-    
-    /* Position and center the image to scale nicely on all screens */
-    height: 100%;
-    width: 100%;
-    background-position-y: 52%;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Images/SyrianRefugeeWomenGreece1400px.jpg);
+
+  /* Position and center the image to scale nicely on all screens */
+  height: 100%;
+  width: 100%;
+  background-position-y: 52%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: scroll;
 }
+
+@media only screen and (min-width: 800px) {
+  .home {
+    background-attachment: fixed;
+  }
+
+}
+
 .landing-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 75%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 75%;
 }
 
 .landing-text .buttons {
-    display: inline-block;
-    width: 80%;
-    max-width: 400px;
+  display: inline-block;
+  width: 80%;
+  max-width: 400px;
 }
 
 .landing-text h1 {
@@ -53,37 +61,37 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-    .landing-text h1 {
-      font-size: 45px;
-      padding-top: 18px;
-      margin-bottom: 0;
-    }
-    .landing-text h3 {
-      font-size: 23px;
-      padding-top: 15px;
-    }
-    .home {
-        background-attachment: relative;
-    }
-    .main-button #one {
-        display: none;
-    }
-    .main-button #two {
-        display: inline !important;
-    }
+  .landing-text h1 {
+    font-size: 45px;
+    padding-top: 18px;
+    margin-bottom: 0;
+  }
+  .landing-text h3 {
+    font-size: 23px;
+    padding-top: 15px;
+  }
+  .home {
+    background-attachment: relative;
+  }
+  .main-button #one {
+    display: none;
+  }
+  .main-button #two {
+    display: inline !important;
+  }
 }
 
 /*Footer*/
 footer {
-    color: white;
-    width: 100%;
-    margin-top: 80px;
-    padding: 35px 30px 20px 30px;
-    background-color: #303030;
-    font-weight: 200;
-    font-size: 14px;
-    background-image: url(Images/footer_map.png);
-  
+  color: white;
+  width: 100%;
+  margin-top: 80px;
+  padding: 35px 30px 20px 30px;
+  background-color: #303030;
+  font-weight: 200;
+  font-size: 14px;
+  background-image: url(Images/footer_map.png);
+
 }
 
 .no-bullet {
@@ -102,6 +110,11 @@ footer {
 
 .main-button:hover {
   color: white;
+}
+
+#lang-button {
+  border: 2px solid white;
+  border-radius:5px;
 }
 
 #join-us-btn {
@@ -173,21 +186,21 @@ footer {
 
 /* Change min-width to 770*/
 @media only screen and (min-width: 768px) {
-    .three-panel .middle {
-        background-color: #3868b8 !important;
-        height: 220px !important;
-        top: -35px;
-    }
-    .three-panel .struct h2 {
-        margin: 0;
-        text-align: center;
-        position: relative;
-        top: 40% !important;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: 600;
-        font-size: 32px;
-    }
+  .three-panel .middle {
+    background-color: #3868b8 !important;
+    height: 220px !important;
+    top: -35px;
+  }
+  .three-panel .struct h2 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 40% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 32px;
+  }
 }
 
 .three-panel .struct2 h2 {
@@ -216,7 +229,7 @@ footer {
   font-size: 27px;
   color: #346BB4;
   padding-top: 0;
-  
+
 }
 .section-header-3 {
   position: absolute;
@@ -228,14 +241,14 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
-    .section-header-3 {
-      position: absolute;
-      font-weight: 800;
-      font-size: 75px;
-      opacity: 0.05;
-      color: black;
-      top: 15px;
-    }
+  .section-header-3 {
+    position: absolute;
+    font-weight: 800;
+    font-size: 75px;
+    opacity: 0.05;
+    color: black;
+    top: 15px;
+  }
 }
 
 /*Image Editing*/
@@ -292,21 +305,21 @@ footer {
 }
 
 .social-icons .fa {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-icons .fa:hover {
-    color: white;
+  color: white;
 }
 
 
@@ -361,7 +374,7 @@ footer {
 }
 #right-header {
   display: flex;
-  flex: 0 1 15%;
+  flex: 0 1 10%;
   justify-content: flex-end;
   align-items: center;
 }
@@ -376,13 +389,13 @@ footer {
   top:11px;
 }
 #mobile-logo {
-    position: absolute;
-    top: 0px;
-    left: 25px;
+  position: absolute;
+  top: 0px;
+  left: 25px;
 }
 #cbutton {
-    color: white;
-    border-color: rgb(255,255,255,0.8);
+  color: white;
+  border-color: rgb(255,255,255,0.8);
 }
 
 .nav-button {
@@ -393,8 +406,8 @@ footer {
   white-space: nowrap
 }
 .nav-button:hover {
-    color: #76b7db !important;
-    text-decoration: none; 
+  color: #76b7db !important;
+  text-decoration: none; 
 }
 
 /* Dropdown content (hidden by default) */
@@ -440,22 +453,22 @@ footer {
 }
 
 @media only screen and (min-width: 750px) {
-    .header {
-        display: flex;
-    }
-    .navbar {
-        display: none;
-    }
+  .header {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
 }
 
 
 /*Others*/
 .green {
-    background-color: #31e0a9 !important;
+  background-color: #31e0a9 !important;
 }
 
 .blue {
-    background-color: #346BB4 !important;
+  background-color: #346BB4 !important;
 }
 
 a {
